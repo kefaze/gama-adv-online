@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animation Throwdown - Play Online | game-adv.online</title>
+  <meta name="description" content="Play Animation Throwdown: The Quest for Cards online! Collect character cards, optimize your deck, and create new combos in this epic card battle.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .game-container {
+      position: relative;
+      width: 100%;
+      height: 0;
+      padding-bottom: 56.25%;
+      /* 16:9 aspect ratio */
+    }
+
+    .game-iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .ad-container {
+      background-color: #f5f5f5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #666;
+      font-weight: bold;
+      border: 1px dashed #ccc;
+    }
+
+    @media (max-width: 768px) {
+      .mobile-ad {
+        height: 90px;
+      }
+    }
+
+    @media (min-width: 769px) {
+      .desktop-ad {
+        height: 250px;
+      }
+
+      .side-ad {
+        height: 600px;
+      }
+    }
+  </style>
+</head>
+
+<body class="bg-gray-100">
+  <!-- Header -->
+  <header class="bg-gradient-to-r from-purple-700 to-blue-600 text-white shadow-lg">
+    <div class="container mx-auto px-4 py-6">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="flex items-center mb-4 md:mb-0">
+          <h1 class="text-2xl md:text-3xl font-bold">Animation Throwdown</h1>
+          <span class="ml-2 text-xs bg-yellow-500 text-black px-2 py-1 rounded">Online</span>
+        </div>
+        <div class="text-sm md:text-base">
+          <span class="font-semibold">game-adv.online</span> - Your Gaming Destination
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Top Banner Ad -->
+  <div class="container mx-auto px-4 py-2 lg:hidden">
+    <div class="ad-container mobile-ad rounded-lg">
+      <div>Mobile Advertisement (320x90)</div>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <main class="container mx-auto px-4 py-6">
+    <div class="flex flex-col lg:flex-row gap-6">
+      <!-- Left Side Ad (Desktop only) -->
+      <div class="hidden lg:block w-1/6">
+        <div class="ad-container side-ad rounded-lg sticky top-4">
+          <div class="text-center">
+            <div>Side Advertisement</div>
+            <div class="text-xs mt-2">(160x600)</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Game Section -->
+      <div class="w-full lg:w-2/3">
+        <!-- Game Container -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+          <div class="game-container">
+            <iframe src="https://www.kongregate.com/en/games/Throwdown/animation-throwdown" class="game-iframe" allowfullscreen title="Animation Throwdown Game">
+            </iframe>
+          </div>
+
+          <!-- Game Controls -->
+          <div class="p-4 bg-gray-50 border-t border-gray-200">
+            <div class="flex flex-wrap gap-2 justify-center">
+              <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md transition">
+                Fullscreen
+              </button>
+              <button class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-md transition">
+                Restart Game
+              </button>
+              <button class="bg-purple-500 hover:bg-purple-600 text-white px-4 py-2 rounded-md transition">
+                Sound On/Off
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Game Description -->
+        <div class="mt-6 bg-white rounded-lg shadow-lg p-6">
+          <h2 class="text-2xl font-bold mb-4 text-gray-800">Animation Throwdown: The Quest for Cards</h2>
+
+          <div class="mb-6">
+            <p class="text-xl font-semibold mb-3 text-red-600">
+              FAMILY GUY! BOB'S BURGERS! FUTURAMA! AMERICAN DAD! KING OF THE HILL! ARCHER!
+            </p>
+            <p class="text-gray-700 mb-4">
+              It's Animation Throwdown: The Quest for Cards! For the first time ever, five of your favorite animated shows are together in one amazing collectible card game.
+            </p>
+          </div>
+
+          <div class="mb-6">
+            <h3 class="text-lg font-bold mb-2 text-gray-800">Game Features</h3>
+            <ul class="list-disc pl-5 text-gray-700 space-y-2">
+              <li>Featuring hundreds of your favorite characters and moments from your favorite episodes</li>
+              <li>Collect character cards, optimize your deck, and create new combos</li>
+              <li>Fight in an epic card battle bacchanal</li>
+            </ul>
+          </div>
+
+          <div class="mb-6 bg-yellow-50 border-l-4 border-yellow-500 p-4">
+            <p class="text-gray-700 italic">
+              The game may be digital, but the stakes are real!* The fate of the world rests in your hands!**
+            </p>
+            <p class="text-gray-500 text-sm mt-2">
+              (*Stakes are not real)<br>
+              (**The fate of the world does not rest in your hands.)
+            </p>
+          </div>
+
+          <div class="mb-6">
+            <p class="text-lg font-semibold text-gray-800">
+              STEWIE, BENDER, TINA BELCHER, HANK HILL, ROGER THE ALIEN & STERLING ARCHER are all waiting for you!
+              Play ANIMATION THROWDOWN now and start kicking and/or touching butts!
+            </p>
+          </div>
+
+          <div class="border-t border-gray-200 pt-4">
+            <p class="text-sm text-gray-500">
+              Animation Throwdown: The Quest for Cards ™ and © 2016 Twentieth Century Fox Film Corporation. All Rights Reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Side Ad (Desktop only) -->
+      <div class="hidden lg:block w-1/6">
+        <div class="ad-container side-ad rounded-lg sticky top-4">
+          <div class="text-center">
+            <div>Side Advertisement</div>
+            <div class="text-xs mt-2">(160x600)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Bottom Banner Ad -->
+  <div class="container mx-auto px-4 py-4">
+    <div class="ad-container rounded-lg">
+      <div class="hidden lg:block">Desktop Advertisement (728x90)</div>
+      <div class="lg:hidden">Mobile Advertisement (320x90)</div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-8 mt-8">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col md:flex-row justify-between">
+        <div class="mb-6 md:mb-0">
+          <h3 class="text-xl font-bold mb-4">game-adv.online</h3>
+          <p class="text-gray-400">Your ultimate destination for online gaming entertainment.</p>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+          <div>
+            <h4 class="font-semibold mb-3">Quick Links</h4>
+            <ul class="space-y-2 text-gray-400">
+              <li><a href="#" class="hover:text-white transition">Home</a></li>
+              <li><a href="#" class="hover:text-white transition">All Games</a></li>
+              <li><a href="#" class="hover:text-white transition">New Games</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-semibold mb-3">Categories</h4>
+            <ul class="space-y-2 text-gray-400">
+              <li><a href="#" class="hover:text-white transition">Card Games</a></li>
+              <li><a href="#" class="hover:text-white transition">Strategy Games</a></li>
+              <li><a href="#" class="hover:text-white transition">Action Games</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-semibold mb-3">Support</h4>
+            <ul class="space-y-2 text-gray-400">
+              <li><a href="#" class="hover:text-white transition">Contact Us</a></li>
+              <li><a href="#" class="hover:text-white transition">Privacy Policy</a></li>
+              <li><a href="#" class="hover:text-white transition">Terms of Service</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="border-t border-gray-700 mt-8 pt-6 text-center text-gray-400">
+        <p>&copy; 2023 game-adv.online. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
